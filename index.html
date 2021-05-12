@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>body{
+
+        background-color: black;
+        text-align: center;
+    
+    }
+    </style>
+    <title>Proyecto con Base de datos de Realtime</title>
+</head>
+<body>
+    <div class="container p-3 my-3 border bg-dark">
+    <h1 class="text-white ">Examen Unidad 3 - Conexion a Realtime</h1>
+   <!-- <div id="app">-->
+
+    <br/>
+    <button class="btn btn-primary" onclick="writecollection()">Agregar colección</button>
+    
+    <button class="btn btn-danger" onclick="readval()">Mostrar con val colección</button>
+    
+    <button class="btn btn-info" onclick="readget()">Mostrar con get colección</button>
+    <br/>
+    <br/>
+  <label class="text-white">Resultado:</label>  
+     <br>
+     
+        <!--<textarea name="Resultado:"  rows="8" cols="30">  </textarea>-->
+    <div class="text-white" id="app"></div>
+  </br></br></br>
+</div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
